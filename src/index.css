@@ -1,0 +1,290 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color:#242121;
+  color:white;
+}
+
+nav{
+
+  height: 14vh;
+  background-color:#292828;
+  display:flex;
+  align-items: center;
+  padding:10px 40px;
+  justify-content: space-between;
+  gap:50px;
+ 
+
+}
+
+.leftNav{
+
+  display:flex;
+  align-items: center;
+  gap:10px;
+  flex:.2;
+
+}
+.leftNav h3{
+  font-size: 40px;
+
+}
+.centerNav {
+  flex:.6;
+  /* width:100%; */
+  display:flex;
+  
+ 
+  
+}
+form{
+  width:100%;
+  height: 100%;
+}
+
+ input{
+  
+  width:85%;
+  height:100%;
+  padding:10px;
+  background-color: #373737;
+  border: none;
+  color:lightgray;
+  
+}
+
+form button{
+  width:15%;
+  padding:8px;
+  background-color: transparent;
+  border:.3px solid rgb(92, 91, 91);
+  color:rgb(133, 131, 131)
+ 
+}
+
+.rightNav{
+  flex:.2;
+  display:flex;
+gap:20px;
+
+}
+
+.bookContainer{
+
+  padding:30px;
+  display:flex;
+  flex-wrap: wrap;
+  gap:30px;
+  justify-content: center;
+
+}
+.bookCard{
+  height: 307px;
+  width:519px;
+  display:flex;
+  
+  background-color:#292828 ;
+  position: relative;
+}
+
+.cardLeft{
+  flex:.5;
+  overflow: hidden;
+
+}
+.cardLeft img{
+  
+  width:100%;
+  object-fit: cover;
+}
+
+
+.cardRight{
+  padding:5px;
+  flex:.5;
+  display:flex;
+  gap:15px;
+  flex-direction: column;
+
+}
+
+.cardRight p{
+  color: rgb(113, 113, 113);
+  font-size: 14px;
+}
+
+.link{
+
+  width: auto;
+  max-width: 200px;
+  height:35px;
+  padding:5px;
+  
+  color:white;
+  text-decoration: none;
+  border-radius: 2px;
+  background-color:#373737 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* .outlet{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.description{
+
+  padding:20px;
+  width:100%;
+  height:50vh;
+  background-color: #292828;
+  display: flex;
+  margin:5% 0px;
+  position: relative;
+
+}
+
+.leftBookDetails{
+  flex:2
+}
+
+.leftBookDetails img{
+  height:100%;
+  width:100%;
+  object-fit: contain;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rightBookDetails{
+  flex:8
+}
+
+.links{
+  display:flex ;
+  gap:20px;
+  position: absolute;
+  bottom:20px;
+  right:20px;
+}
+
+
+.middleDetails{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+#details{
+  color:rgb(112, 112, 112)
+}
+
+.publisher{
+  display:flex;
+  gap:10px;
+  color: #aeabab;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+  .rightNav{
+    display:none;
+  }
+
+  .leftNav img{
+
+    width:7vh;
+
+  }
+
+  .leftNav h3{
+    font-size: 20px;
+  }
+
+  nav{
+
+   
+    padding:10px ;
+    gap:20px;
+   
+   
+  
+  }
+  .centerNav{
+    flex:1
+  }
+
+  input{
+    width:60%
+  }
+  
+
+  form button{
+    width:30%;
+    font-size: 10px;
+    padding:10px;
+  }
+
+  .bookCard{
+    height: 327px;
+    
+  }
+
+  .description{
+    flex-direction: column;
+  }
+
+  .leftBookDetails img{
+   
+    display: none;
+  }
+
+  .leftBookDetails{
+    flex:1
+  }
+  
+
+  .rightBookDetails{
+    flex:2
+  }
+
+  .links{
+    
+    position: absolute;
+   top:11rem;
+    right:20px;
+  }
+
+  .description{
+
+    
+    height:90vh;
+    background-color: #292828;
+   
+    flex-direction: column;
+    margin: 0px;
+    
+  
+  }
+  
+}
